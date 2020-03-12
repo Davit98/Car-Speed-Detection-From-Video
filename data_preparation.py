@@ -28,7 +28,7 @@ def generate_frames_opencv(video, output_dir):
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
     except OSError:
-        print('Error: Creating directory of data_train')
+        print('Error: Creating directory')
 
     current_frame = 0
     while True:
@@ -45,6 +45,12 @@ def generate_frames_opencv(video, output_dir):
 
 def generate_frames_skv(video, output_dir):
     reader = skvideo.io.FFmpegReader(video)
+
+    try:
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+    except OSError:
+        print('Error: Creating directory')
 
     for idx, frame in enumerate(reader.nextFrame()):
         img_path = output_dir + str(idx) + '.jpg'
