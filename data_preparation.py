@@ -81,8 +81,8 @@ if __name__ == "__main__":
     # generate_frames_opencv(TRAIN_VIDEO, TRAIN_FRAME_DIR)
     # generate_frames_opencv(TEST_VIDEO, TEST_FRAME_DIR)
 
-    # generate_frames_skv(TRAIN_VIDEO, TRAIN_FRAME_DIR)
-    # generate_frames_skv(TEST_VIDEO, TEST_FRAME_DIR)
+    generate_frames_skv(TRAIN_VIDEO, TRAIN_FRAME_DIR)
+    generate_frames_skv(TEST_VIDEO, TEST_FRAME_DIR)
 
     create_train_dataframe(TRAIN_LABELS, TRAIN_METADATA)
     create_test_dataframe(TEST_FRAME_DIR, TEST_METADATA)
