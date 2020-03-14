@@ -5,7 +5,6 @@ import numpy as np
 import skvideo.io
 
 ROOT_DIR = "./"
-
 DATA_DIR = os.path.join(ROOT_DIR, "data/")
 
 TRAIN_VIDEO = os.path.join(DATA_DIR, "train.mp4")
