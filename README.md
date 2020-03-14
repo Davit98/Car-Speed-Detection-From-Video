@@ -13,6 +13,6 @@ Detecting the speed of the car in a video using optical flow from opencv and con
 
 #### File descriptions
 
-data_preparation.py - generates and saves video frames 
+data_preparation.py - generates and saves the video frames 
 
 main.ipynb - this is the main notebook which contains a solution to the problem
